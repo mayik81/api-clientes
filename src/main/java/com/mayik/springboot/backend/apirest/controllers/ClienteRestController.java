@@ -34,7 +34,7 @@ public class ClienteRestController {
         Cliente cliente = null;
 
         Map<String, Object> response = new HashMap<>();
-
+        //hacemos un try cath
         try {
             cliente = clienteService.findById(id);
         } catch (DataAccessException e) {
